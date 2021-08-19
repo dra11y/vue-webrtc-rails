@@ -1,7 +1,9 @@
 
 # vue-webrtc-rails
 
-Forked to work with Rails 6 ActionCable instead of socket.io
+Forked to work with Rails 6 ActionCable instead of socket.io.
+
+No Railties/app-side dependencies (other than ActionCable). Use as Yarn/Node package in package.json as with the original.
 
 WebRTC component designed for Vue.js ... See the [DEMO](https://westonsoftware.github.io/vue-webrtc/)
 
