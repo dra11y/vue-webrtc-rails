@@ -16,8 +16,10 @@
 
   const consumer = createConsumer()
 
+  console.log('vue-webrtc-rails!')
+
   export default {
-    name: 'vue-webrtc',
+    name: 'vue-webrtc-rails',
     components: {
     },
     data() {

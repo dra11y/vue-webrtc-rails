@@ -43,6 +43,8 @@ class SimpleSignalClient extends EventEmitter {
     }
 
     discover(discoveryData = {}) {
+        console.log('discover!')
+
         this._subscription = this.consumer.subscriptions.create(discoveryData, {
             // connected() {
             //     this.send({ type: _this.JOIN_ROOM, from: _this.currentUser, request_id: _this.requestId })
