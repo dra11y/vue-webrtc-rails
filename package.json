@@ -1,17 +1,21 @@
 {
-  "name": "vue-webrtc",
+  "name": "vue-webrtc-rails",
   "version": "2.0.0",
-  "description": "WebRTC video component for Vue.js",
+  "description": "WebRTC video component for Vue.js and Rails 6 Action Cable",
   "main": "dist/index.js",
   "files": [
     "dist/index.js"
   ],
   "author": {
+    "name": "Tom Grushka",
+    "email": "tom@dra11y.com",
+    "url": "https://github.com/dra11y"
+  },
+  "contributors": [{
     "name": "Andy Weston",
     "email": "aweston@westonsoftware.com",
     "url": "https://github.com/westonsoftware"
-  },
-  "contributors": [],
+  }],
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules --config build/webpack.config.js",
     "builddemo": "cross-env NODE_ENV=production webpack --progress --hide-modules --config demo/webpack.config.js",
@@ -20,13 +24,15 @@
     "devs": "cross-env NODE_ENV=development webpack-dev-server --hot --open --https --host 192.168.1.201 --port 31415 --config demo/webpack.config.js"
   },
   "dependencies": {
-    "simple-signal-client": "^3.0.0",
-    "socket.io-client": "^4.1.2",
-    "vue": "^2.6.11"
+    "@rails/actioncable": "^6.1.4-1",
+    "vue": "^2.6.11",
+    "cuid": "^2.0.2",
+    "nanobus": "^4.3.3",
+    "simple-peer": "^9.6.2"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/westonsoftware/vue-webrtc"
+    "url": "https://github.com/dra11y/vue-webrtc-rails"
   },
   "license": "MIT",
   "devDependencies": {

@@ -1,6 +1,8 @@
 
 # vue-webrtc-rails
 
+## rails branch
+
 Forked to work with Rails 6 ActionCable instead of socket.io.
 
 No Railties/app-side dependencies (other than ActionCable). Use as Yarn/Node package in package.json as with the original.
@@ -99,7 +101,7 @@ npm run demo
 
 | Version           | Notes                                                                   |
 | -------------- | ----------------------------------------------------------------------- |
-| 2.0.0           | Replaced signaling server and webrtc library with SimplePeer 
+| 2.0.0           | Replaced signaling server and webrtc library with SimplePeer
 | 1.2.2           | Added stunServer and turnServer properties                                       |
 | 1.2.1           | Added Vue CLI sample, npm audit fixes                                       |
 | 1.2.0           | Added the Screen Share button                                       |
@@ -141,7 +143,7 @@ This project is based off of:
 [SimpleSignal](https://github.com/t-mullen/simple-signal)
 
 
-The Vue.js work was based on this camera component:  
+The Vue.js work was based on this camera component:
 [@vinceg vue-web-cam](https://github.com/vinceg/vue-web-cam)
 
 
